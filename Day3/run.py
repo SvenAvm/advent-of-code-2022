@@ -1,6 +1,6 @@
 import utils
 
-starting_items = (utils.parse_input("input.txt"))
+starting_items = (utils.parse_input("day_3_input.txt"))
 task_1_sum = 0
 task_2_sum = 0
 badges = utils.find_badges(starting_items)

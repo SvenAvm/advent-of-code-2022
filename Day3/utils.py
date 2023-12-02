@@ -43,19 +43,11 @@ def get_item_priority(priorities_dict, key):
 
 def find_badges(string_list):
     common_letters = []
-
     for i in range(0, len(string_list), 3):
         # Extract up to the next three strings
         group = string_list[i:i+3]
-
-        # Check if the group has less than 3 strings
-        if len(group) < 3:
-            break
-
         # Find common letters in the three strings
         common_in_group = set(group[0]).intersection(group[1], group[2])
-
         # Add the common letters to the result list
         common_letters.extend(common_in_group)
-
     return common_letters
